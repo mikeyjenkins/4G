@@ -12,7 +12,7 @@ export interface Location {
 const Game: React.FC = (): JSX.Element => {
   const [currentLocation, setLocation] = useState<Location>({ x: -1, y: -1 });
   const [currentDirection, setCurrentDirection] = useState<string>("SOUTH");
-  console.log(currentLocation)
+  
   const placeRobot = (x: number, y: number, f?: string) => {
     //prevent the robot from moving beyond the bounds with animation
     if (x >= 5 || y >= 5 || x < 0 || y < 0) {

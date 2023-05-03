@@ -29,7 +29,7 @@ const ControlPanel: React.FC<Props> = ({
   const handlePlaceRobot = () => {
     //validate x coordinate in range and a number
     if (
-      isNaN(+placeRobotForm.x) ||
+      isNaN(parseInt(placeRobotForm.x)) ||
       +placeRobotForm.x < 0 ||
       +placeRobotForm.x > 4
     ) {
@@ -37,7 +37,7 @@ const ControlPanel: React.FC<Props> = ({
     }
     //validate x coordinate in range and a number
     if (
-      isNaN(+placeRobotForm.y) ||
+      isNaN(parseInt(placeRobotForm.y)) ||
       +placeRobotForm.y < 0 ||
       +placeRobotForm.y > 4
     ) {
