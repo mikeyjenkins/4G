@@ -1,0 +1,116 @@
+.game_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .board_area_wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+
+  .empty_tile_message {
+    display: none;
+    font-weight: lighter;
+  }
+
+  &:hover {
+    .empty_tile_message {
+      display: inline;
+    }
+  }
+  }
+
+  .robot_wrapper {
+    margin: 25px;
+    .robot_flex {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  .controller_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 20px;
+
+    button {
+      cursor: pointer;
+      outline: 0;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: 6px 12px;
+      font-size: 1rem;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      color: #0d6efd;
+      border-color: #0d6efd;
+      margin: 5px;
+      &:hover {
+          color: #fff;
+          background-color: #0d6efd;
+          border-color: #0d6efd;
+      }
+  
+    }
+    
+
+    .movement_wrapper {
+      display: flex;
+    }
+    .placement_wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+  

@@ -1,0 +1,1 @@
+export const DIRECTION_MAP = ["SOUTH", "WEST", "NORTH", "EAST"]
