@@ -76,6 +76,7 @@ const Game: React.FC = (): JSX.Element => {
   };
 
   const reportLocation = () => {
+    if (isNotPlaced()) return 
     alert(
       `The robot's current currentLocation is at x: ${currentLocation.x} y: ${currentLocation.y} facing ${currentDirection}`
     );
